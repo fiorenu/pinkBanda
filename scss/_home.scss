@@ -1,26 +1,28 @@
+$backgroundcolor: black;
+
 /* Mobile Styles */
 @media only screen and (max-width: 480px) {
-  body {
-  	width: 100%;
-    background-color:black;
-  }
-  header{
-  		width: 100%;
+	body {
+		width: 100%;
+		background-color: $backgroundcolor; 
+	}
+	header{
+		width: 100%;
 		height: 60px;
 		background-color: pink;
-  }
-  .pink{
-  		float: left;
+	}
+	.header--logo{
+		float: left;
 		width: 89px;
 		height: 70px;
 		margin-left: 1em;
 		padding-top: 0;
 		margin-top: 0;
 	}
-	nav{
+	.header--nav{
 		display: none;
 	}
-	.principal{
+	.sectionHome--img{
 		clear: right;
 		width: 100%;
 		height: 100%;
@@ -30,7 +32,7 @@
 		padding-top: 0;
 		padding-bottom: 20%;
 	}
-	.hambur{
+	.header--menuCel{
 		float: right;
 		width: 50px;
 		height: 55px;
@@ -38,7 +40,7 @@
 		margin-top: 6px;
 	}
 
-	.hamburdos{
+	.header--listaCel{
 		display: none;
 		color: black;
 		background-color: #7e0d37;
@@ -50,24 +52,24 @@
 		margin: 0;
 		padding: 10px;
 	}
-	.hambur:hover .hamburdos{
+	.header--menuCel:hover .header--listaCel{
 		color: black;
 		display: block;
 	}
-	.infofooter{
+	.footerHome--lista{
 		display: inline-block;
 		clear: both; 
     	float: left;
 	}
-	.nuevouno{
+	.header--menuPc{
 		display: none;
 	}
-	.infofooter:hover .numerofone{
+	.footerHome--listaCel:hover .footerHome--nroCel{
 		background-color: #7e0d37; 
 		display: block;
 
 	}
-	.piepagina{
+	.FooterHome{
 		clear: both;
     	color: white;
     	width: 100%;
@@ -78,27 +80,25 @@
     	justify-content: center;
     	align-items: center;
     	flex-direction: column;
-}
-
 	}
-	h2{
+	.footerHome--tituloLista{
 		font-family: 'Roboto', sans-serif;
 		font-size: 10px;
 		font-style: italic;
-
+		color: #000000;
 	}
-	.nrodos{
+	.footerHome--nroCel{
 		list-style-type: none;
 		font-size: 9px;
 		text-decoration: none;
+		color: #000000; 
 	}
-	.redes{
+	.footerHome--redes{
 		clear: right;
-	    margin-right: 2em;
+	    margin-right: 8.9em;
 	    float: right;
-	   
 	}
-	.tt{
+	.footerHome--tt{
 		border-radius: 50%;
 		width: 30px;
 		background: #e43868;
@@ -106,7 +106,7 @@
 		margin-right: 5px;
 		position: relative;
 	}
-	.fb{
+	.footerHome--fb{
 		border-radius: 50%;
 		width: 30px;
 		background: #e43868;
@@ -114,7 +114,7 @@
 		margin-right: 5px;
 		position: relative;
 	}
-	.ig{
+	.footerHome--ig{
 		border-radius: 50%;
 		width: 30px;
 		background: #e43868;
@@ -125,14 +125,8 @@
 
 }
 /* Tablet Styles */
-@media only screen and (min-width: 481px) and (max-width: 1024px) {
-  body {
-    background-color: #F5CF8E; /* Yellow */
-  }
-}
-/* Desktop Styles */
-@media only screen and (min-width: 1025px) {
-	body{
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+ body{
 		background-color: black;
 	}
 	header{
@@ -140,13 +134,13 @@
 		height: 50px;
 		background-color: black;
 	}
-	.pink{
+	.header--logo{
 		width: 120px;
 		height: 95px;
 		margin-top: 1.5em;
 		margin-left: 1em;
 	}
-	nav{
+	.header--nav{
 		float: right;
 		text-decoration: none;
 		color: pink;
@@ -156,30 +150,27 @@
 		margin-bottom: 0;
 
 	}
-	br{
+	.header--menuCel{
 		display: none;
 	}
-	.hambur{
-		display: none;
-	}
-	.menu{
+	.header--menuPc{
 		display: inline-block;
 		position: right;
 		padding-right: 2em;
 	}
-	.color{
+	.header--colorlink{
 		text-decoration: none;
 		color: white;
 	}
-	.desplegable{
+	.header--desplegablePc{
 		display: inline-block;
 		float: left;
 		position: relative;
 	}
-	.numerofone{
+	.footerHome--listaCel{
 		display: none;
 	}
-	.opciones{
+	.header--subdesplegablePc{
 		display: none;
 		color: black;
 		background-color: #7e0d37;
@@ -191,15 +182,15 @@
 		margin: 0;
 		padding: 10px;
 	}
-	.desplegable:hover .opciones{
+	.header--desplegablePc:hover .header--subdesplegablePc{
 		color: black;
 		display: block;
 
 	}
-	.hamburdos{
+	.header--listaCel{
 		display: none;
 	}
-	.principal{
+	.sectionHome--img{
 		width: 74%;
 		height: 55%;
 		clear: left;
@@ -209,16 +200,16 @@
 		padding-bottom: 20%;
 
 	}
-	.infofooter{
+	.footerHome--lista{
 		display: inline-block;
 		clear: left;
 		padding-right: 3em;
 	}
-	.nuevouno{
+	.footerHome--listaDos{
 		margin: 0;
 		padding: 0;
 	}
-	.piepagina{
+	.footerHome{
 		clear: left;
 		color: white;
 		width: 100%;
@@ -231,23 +222,23 @@
 	    align-items: center;
 
 	}
-	h2{
+	.footerHome--tituloLista{
 		font-family: 'Roboto', sans-serif;
 		font-size: 14px;
 		font-style: italic;
 
 	}
-	.nro{
+	.FooterHome--nroCel{
 		list-style-type: none;
 		font-size: 13px;
 		text-decoration: none;
 	}
-	.redes{
+	.footerHome--redes{
 		clear: right;
 	    margin-right: 2em;
 	    float: right;
 	}
-	.tt{
+	.footerHome--tt{
 		border-radius: 50%;
 		width: 30px;
 		background: #e43868;
@@ -255,7 +246,7 @@
 		margin-right: 5px;
 		position: relative;
 	}
-	.fb{
+	.footerHome--fb{
 		border-radius: 50%;
 		width: 30px;
 		background: #e43868;
@@ -263,7 +254,146 @@
 		margin-right: 5px;
 		position: relative;
 	}
-	.ig{
+	.footerHome--ig{
+		border-radius: 50%;
+		width: 30px;
+		background: #e43868;
+		float: right;
+		margin-right: 5px;
+		position: relative;
+	}
+}
+/* Desktop Styles */
+@media only screen and (min-width: 1025px) {
+	body{
+		background-color: black;
+	}
+	header{
+		width: 100%;
+		height: 50px;
+		background-color: black;
+	}
+	.header--logo{
+		width: 120px;
+		height: 95px;
+		margin-top: 1.5em;
+		margin-left: 1em;
+	}
+	.header--nav{
+		float: right;
+		text-decoration: none;
+		color: pink;
+		margin-right: 2em;
+		margin-top: 2.5em;
+		font-family: 'Roboto', sans-serif;
+		margin-bottom: 0;
+
+	}
+	.header--menuCel{
+		display: none;
+	}
+	.header--menuPc{
+		display: inline-block;
+		position: right;
+		padding-right: 2em;
+	}
+	.header--colorlink{
+		text-decoration: none;
+		color: white;
+	}
+	.header--desplegablePc{
+		display: inline-block;
+		float: left;
+		position: relative;
+	}
+	.footerHome--listaCel{
+		display: none;
+	}
+	.header--subdesplegablePc{
+		display: none;
+		color: black;
+		background-color: #7e0d37;
+		height: 70px;
+		width: 90px;
+		list-style-type: none;
+		text-align: left;
+		position: absolute;
+		margin: 0;
+		padding: 10px;
+	}
+	.header--desplegablePc:hover .header--subdesplegablePc{
+		color: black;
+		display: block;
+
+	}
+	.header--listaCel{
+		display: none;
+	}
+	.sectionHome--img{
+		width: 74%;
+		height: 55%;
+		clear: left;
+		float: left;
+		margin: 0 auto;
+		padding-left: 11%;
+		padding-bottom: 20%;
+
+	}
+	.footerHome--lista{
+		display: inline-block;
+		clear: left;
+		padding-right: 3em;
+	}
+	.footerHome--listaDos{
+		margin: 0;
+		padding: 0;
+	}
+	.footerHome{
+		clear: left;
+		color: white;
+		width: 100%;
+		height: 150px;
+		border-top: solid; 
+		border-color: white;
+		border-width: 1px;
+	    display: flex;
+	    justify-content: space-between;
+	    align-items: center;
+
+	}
+	.footerHome--tituloLista{
+		font-family: 'Roboto', sans-serif;
+		font-size: 14px;
+		font-style: italic;
+
+	}
+	.FooterHome--nroCel{
+		list-style-type: none;
+		font-size: 13px;
+		text-decoration: none;
+	}
+	.footerHome--redes{
+		clear: right;
+	    margin-right: 2em;
+	    float: right;
+	}
+	.footerHome--tt{
+		border-radius: 50%;
+		width: 30px;
+		background: #e43868;
+		float: right;
+		margin-right: 5px;
+		position: relative;
+	}
+	.footerHome--fb{
+		border-radius: 50%;
+		width: 30px;
+		background: #e43868;
+		float: right;
+		margin-right: 5px;
+		position: relative;
+	}
+	.footerHome--ig{
 		border-radius: 50%;
 		width: 30px;
 		background: #e43868;
@@ -273,4 +403,3 @@
 	}
 
 }
-
